@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - ChiPlusHome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">ChiPlusHome</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="properties.html" class="text-blue-600 font-semibold">Hot Selling Properties</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600">Latest Blog News</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">How to Reach Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="properties.html" class="block py-2 text-blue-600 font-semibold">Hot Selling Properties</a>
+            <a href="blog.html" class="block py-2 text-gray-600 hover:text-blue-600">Latest Blog News</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">How to Reach Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-600 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold">Our Properties</h1>
+                <p class="text-lg mt-2">Find the property that's right for you.</p>
+            </div>
+        </section>
+
+        <!-- Filter and Sort Section -->
+        <section class="py-8 bg-gray-100">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end bg-white p-6 rounded-lg shadow">
+                    <div>
+                        <label for="property-type" class="block text-sm font-medium text-gray-700">Property Type</label>
+                        <select id="property-type" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                            <option>Any</option>
+                            <option>Landed Property</option>
+                            <option>Apartment</option>
+                            <option>Duplex</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="location-filter" class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" id="location-filter" placeholder="e.g., Lekki, Lagos" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="price-filter" class="block text-sm font-medium text-gray-700">Price Range (₦)</label>
+                        <input type="text" id="price-filter" placeholder="e.g., 10M - 50M" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <button id="filter-button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                        <i class="fas fa-search mr-2"></i>Filter
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Grid -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div id="property-list-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Skeleton Loaders for Properties -->
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                    <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ChiPlusHome</h3>
+                    <p class="text-gray-400">Your trusted partner in finding the perfect property.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="properties.html" class="hover:text-blue-400">Properties</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span>Divine Estate, Bogije, Ibeju-Lekki, Lagos</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><span>+234 706 646 6678</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i><span>info@chiplushome.com.ng</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 ChiPlusHome. All Rights Reserved.</p>
+                <p>Designed & Developed by Ubongabasi Ebebe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/properties.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

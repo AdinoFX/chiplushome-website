@@ -1,0 +1,110 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* CSS Carousel Styles */
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 6)); }
+}
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+}
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(241,245,249,1) 0%, rgba(241,245,249,0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slide-track {
+    animation: scrolling 30s linear infinite;
+    display: flex;
+    width: calc(200px * 12);
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+.slide {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.slide img {
+    max-width: 150px;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
+.slide img:hover {
+    filter: grayscale(0);
+}
+
+/* Skeleton Loader Styles */
+.skeleton-card {
+    background-color: #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.skeleton-image {
+    height: 14rem;
+    background-color: #cbd5e1;
+}
+.skeleton-text {
+    height: 1rem;
+    margin-top: 0.75rem;
+    background-color: #cbd5e1;
+    border-radius: 0.25rem;
+}
+
+/* Blog Content Area Styles */
+.prose h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.prose p {
+    line-height: 1.75;
+    margin-bottom: 1em;
+}
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    z-index: 100;
+}
+
+/* Sold Out Indicator Style */
+.property-sold {
+    filter: grayscale(80%);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+.property-sold:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}

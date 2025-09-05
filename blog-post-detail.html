@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - ChiPlusHome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">ChiPlusHome</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="properties.html" class="text-gray-600 hover:text-blue-600">Hot Selling Properties</a>
+                <a href="blog.html" class="text-blue-600 font-semibold">Latest Blog News</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">How to Reach Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+             <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+             <a href="properties.html" class="block py-2 text-gray-600 hover:text-blue-600">Hot Selling Properties</a>
+             <a href="blog.html" class="block py-2 text-blue-600 font-semibold">Latest Blog News</a>
+             <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">How to Reach Us</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12">
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                
+                <div class="mb-8">
+                    <a href="blog.html" class="text-blue-600 hover:underline font-semibold">
+                        <i class="fas fa-arrow-left mr-2"></i>Back to All Posts
+                    </a>
+                </div>
+
+                <h1 id="post-title" class="text-3xl md:text-4xl font-bold mb-2">Loading title...</h1>
+                <p id="post-date" class="text-gray-500 mb-6">Loading date...</p>
+                
+                <img id="post-image" src="https://placehold.co/800x400/E2E8F0/333?text=Loading..." alt="Loading image..." class="w-full h-auto object-cover rounded-lg mb-8">
+                
+                <div id="post-content" class="prose max-w-none">
+                    <p>Loading content...</p>
+                </div>
+
+                <!-- **** NEW: Social Share Section **** -->
+                <div class="mt-10 pt-6 border-t border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Share this Post</h3>
+                    <div class="flex justify-center items-center space-x-4">
+                        <!-- Facebook -->
+                        <a id="share-facebook" href="#" target="_blank" class="text-gray-500 hover:text-blue-800 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a id="share-twitter" href="#" target="_blank" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a id="share-whatsapp" href="#" target="_blank" class="text-gray-500 hover:text-green-500 transition-colors duration-300">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a id="share-linkedin" href="#" target="_blank" class="text-gray-500 hover:text-blue-700 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+   <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ChiPlusHome</h3>
+                    <p class="text-gray-400">Your trusted partner in finding the perfect property.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="properties.html" class="hover:text-blue-400">Properties</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span>Divine Estate, Bogije, Ibeju-Lekki, Lagos</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><span>+234 706 646 6678</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i><span>info@chiplushome.com.ng</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 ChiPlusHome. All Rights Reserved.</p>
+                <p>Designed & Developed by Ubongabasi Ebebe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/blog-posts.js"></script>
+    <script src="js/blog-post-detail.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

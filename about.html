@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ChipLushome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">ChiPlusHome</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-blue-600 font-semibold">About Us</a>
+                <a href="properties.html" class="text-gray-600 hover:text-blue-600">Hot Selling Properties</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600">Latest Blog News</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">How to Reach Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-blue-600 font-semibold">About Us</a>
+            <a href="properties.html" class="block py-2 text-gray-600 hover:text-blue-600">Hot Selling Properties</a>
+            <a href="blog.html" class="block py-2 text-gray-600 hover:text-blue-600">Latest Blog News</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">How to Reach Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-600 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold">About ChiPlusHome</h1>
+                <p class="text-lg mt-2">Your Trusted Partner in Real Estate</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="./images/1.jpg" alt="Team discussing plans" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Founded with a passion for connecting people with their dream properties, ChipLushome has grown into a leading name in the Nigerian real estate market. We believe that a home is more than just a place to live; it's a foundation for your future.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our team of dedicated professionals is committed to providing personalized service, expert advice, and a seamless experience from start to finish. We leverage our deep market knowledge to help you make informed decisions, whether you are buying, selling, or investing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+                <div>
+                    <i class="fas fa-bullseye text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Our Mission</h3>
+                    <p class="text-gray-600">To provide exceptional real estate services with integrity, professionalism, and a commitment to client satisfaction, making the dream of property ownership a reality for everyone.</p>
+                </div>
+                <div>
+                    <i class="fas fa-eye text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Our Vision</h3>
+                    <p class="text-gray-600">To be the most trusted and respected real estate agency in Nigeria, known for our innovative approach, market expertise, and unwavering dedication to our clients' success.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ChiPlusHome</h3>
+                    <p class="text-gray-400">Your trusted partner in finding the perfect property.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="properties.html" class="hover:text-blue-400">Properties</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span>Divine Estate, Bogije, Ibeju-Lekki, Lagos</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><span>+234 706 646 6678</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i><span>info@chiplushome.com.ng</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 ChiPlusHome. All Rights Reserved.</p>
+                <p>Designed & Developed by Ubongabasi Ebebe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
