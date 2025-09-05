@@ -8,57 +8,36 @@ Live Site: ![ChiPlusHomes site](https://chiplushomes.netlify.app/)
 🚀 Key Features
 This isn't just a static brochure website; it's a dynamic web application packed with features to drive business growth:
 
-Dynamic Property Listings: All properties are loaded from a central JavaScript "database" file, making updates easy.
+- Dynamic Property Listings: All properties are loaded from a central JavaScript "database" file, making updates easy.
 
-Advanced Search & Filtering: Users can filter properties in real-time by type, location, and price range.
+- Advanced Search & Filtering: Users can filter properties in real-time by type, location, and price range.
 
-Detailed Property Pages: Each property has its own dedicated page with a photo gallery, detailed descriptions, and key information.
+- Detailed Property Pages: Each property has its own dedicated page with a photo gallery, detailed descriptions, and key information.
 
-Direct WhatsApp Lead Generation: A "Book Inspection" button on each property page opens WhatsApp with a pre-filled, customized message for instant lead capture.
+- Direct WhatsApp Lead Generation: A "Book Inspection" button on each property page opens WhatsApp with a pre-filled, customized message for instant lead capture.
 
-Full Blog System: A complete blog with a main listing page and individual article pages to build brand authority.
+- Full Blog System: A complete blog with a main listing page and individual article pages to build brand authority.
 
-Social Sharing: Users can easily share blog posts on major social media platforms.
+- Social Sharing: Users can easily share blog posts on major social media platforms.
 
-Professional UX/UI Features: Includes client testimonials, a partner logo carousel, "lazy loading" for images, skeleton loading animations, and a "back-to-top" button.
+- Professional UX/UI Features: Includes client testimonials, a partner logo carousel, "lazy loading" for images, skeleton loading animations, and a "back-to-top" button.
 
-SEO & Social Meta Tags: Dynamic meta tags are generated for property and blog pages, ensuring professional link previews when shared on social media.
+- SEO & Social Meta Tags: Dynamic meta tags are generated for property and blog pages, ensuring professional link previews when shared on social media.
 
-Fully Responsive: Designed and tested to work beautifully on all devices, from mobile phones to desktops.
+- Fully Responsive: Designed and tested to work beautifully on all devices, from mobile phones to desktops.
 
 🛠️ Tech Stack
 This project was built from the ground up using modern frontend technologies, with a focus on performance and maintainability without relying on a complex backend.
 
-HTML5
+- HTML5
 
-CSS3 (with custom properties and animations)
+- CSS3 (with custom properties and animations)
 
-Tailwind CSS (for the utility-first styling framework)
+- Tailwind CSS (for the utility-first styling framework)
 
-JavaScript (ES6+) (for all dynamic functionality, DOM manipulation, and data handling)
+- JavaScript (ES6+) (for all dynamic functionality, DOM manipulation, and data handling)
 
-Formspree (for backend-less contact form submissions)
-
-📂 Project Structure
-/
-├── css/
-│   └── style.css
-├── js/
-│   ├── properties.js         # "Database" for property listings
-│   ├── blog-posts.js         # "Database" for blog articles
-│   ├── testimonials.js       # "Database" for testimonials
-│   ├── script.js             # Main script for homepage & global functions
-│   ├── property-detail.js    # Logic for the single property page
-│   ├── blog-script.js        # Logic for the main blog page
-│   └── blog-post-detail.js   # Logic for the single blog post page
-├── images/
-│   └── ... (all website images)
-├── index.html
-├── about.html
-├── properties.html
-├── blog.html
-├── contact.html
-└── ... (other HTML files)
+- Formspree (for backend-less contact form submissions)
 
 ✍️ Author
 Ubongabasi Ebebe - ![LinkedIn](https://www.linkedin.com/in/ubongabasiebebe/)
