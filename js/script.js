@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // --- HOMEPAGE & PROPERTIES PAGE LOGIC ---
-    const propertyListContainer = document.querySelector('#property-list-container');
+    // --- Page-Specific Logic ---
+
+    // ** 1. Logic for the MAIN properties.html page **
+    const propertyListContainer = document.getElementById('property-list-container');
     if (propertyListContainer && typeof properties !== 'undefined') {
         
         const displayProperties = (propertiesToDisplay) => {
-            // Use a short delay to allow skeleton loaders to be seen
             setTimeout(() => {
                 propertyListContainer.innerHTML = ''; 
                 if (propertiesToDisplay.length > 0) {
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>${property.location}</p>
                                     <div class="flex justify-between items-center mb-4">
                                         <p class="text-lg font-bold text-blue-600">₦${new Intl.NumberFormat().format(property.price)}</p>
-                                        <p class="text-gray-500">${property.size} ${property.sizeUnit}</p>
+                                        <p class="text-gray-500">${property.size > 0 ? property.size + ' ' + property.sizeUnit : ''}</p>
                                     </div>
                                     <a href="property-detail.html?id=${property.id}" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
                                         View Details
@@ -67,12 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     propertyListContainer.innerHTML = '<p class="text-center col-span-full text-gray-600">No properties match your search criteria.</p>';
                 }
-            }, 500); // 0.5 second delay
+            }, 500);
         };
 
-        displayProperties(properties); // Initial load
+        displayProperties(properties); // Initial load on properties page
 
-        // Filter Logic
+        // Filter Logic for properties page
         const filterButton = document.getElementById('filter-button');
         const propertyTypeFilter = document.getElementById('property-type');
         const locationFilter = document.getElementById('location-filter');
@@ -110,13 +111,52 @@ document.addEventListener('DOMContentLoaded', () => {
         if (priceFilter) priceFilter.addEventListener('keyup', performFilter);
     }
 
-    // --- HOMEPAGE-ONLY LOGIC ---
+    // ** 2. Logic for HOMEPAGE "Hot Selling Properties" **
+    const homepagePropertiesContainer = document.getElementById('homepage-properties-container');
+    if (homepagePropertiesContainer && typeof properties !== 'undefined') {
+        const displayHomepageProperties = () => {
+             setTimeout(() => {
+                homepagePropertiesContainer.innerHTML = '';
+                const featuredProperties = properties.slice(0, 3); // Get only the first 3
 
-    // Featured Property
+                featuredProperties.forEach(property => {
+                    const isSoldClass = property.status !== 'For Sale' ? 'property-sold' : '';
+                    const propertyCard = `
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ${isSoldClass}">
+                            <div class="relative">
+                                <img src="${property.mainImage}" alt="${property.title}" class="w-full h-56 object-cover">
+                                <div class="absolute top-2 left-2 py-1 px-3 rounded-md text-sm font-semibold ${
+                                    property.status === 'For Sale' ? 'bg-green-500 text-white' : 
+                                    property.status === 'Sold Out' ? 'bg-red-500 text-white' : 'bg-gray-700 text-white'
+                                }">
+                                    ${property.status}
+                                </div>
+                                ${property.offer ? `<div class="absolute top-2 right-2 bg-yellow-400 text-gray-800 py-1 px-3 rounded-md text-sm font-semibold">${property.offer}</div>` : ''}
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">${property.title}</h3>
+                                <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>${property.location}</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="text-lg font-bold text-blue-600">₦${new Intl.NumberFormat().format(property.price)}</p>
+                                    <p class="text-gray-500">${property.size > 0 ? property.size + ' ' + property.sizeUnit : ''}</p>
+                                </div>
+                                <a href="property-detail.html?id=${property.id}" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>`;
+                    homepagePropertiesContainer.insertAdjacentHTML('beforeend', propertyCard);
+                });
+            }, 500);
+        };
+        displayHomepageProperties();
+    }
+
+    // ** 3. Logic for HOMEPAGE "Featured Property" **
     const featuredPropertyContainer = document.getElementById('featured-property-container');
     if (featuredPropertyContainer && typeof properties !== 'undefined') {
-         setTimeout(() => {
-            const featuredPropertyId = 2; 
+        setTimeout(() => {
+            const featuredPropertyId = 1; 
             const featuredProperty = properties.find(p => p.id === featuredPropertyId);
             if (featuredProperty) {
                 const featuredHTML = `
@@ -130,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="text-gray-700 mb-6 leading-relaxed">${featuredProperty.description.substring(0, 150)}...</p>
                             <div class="flex justify-between items-center mb-6">
                                 <p class="text-2xl font-bold text-blue-600">₦${new Intl.NumberFormat().format(featuredProperty.price)}</p>
-                                <p class="text-gray-500 font-semibold">${featuredProperty.size} ${featuredProperty.sizeUnit}</p>
+                                <p class="text-gray-500 font-semibold">${featuredProperty.size > 0 ? featuredProperty.size + ' ' + featuredProperty.sizeUnit : ''}</p>
                             </div>
                             <a href="property-detail.html?id=${featuredProperty.id}" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300">
                                 View Full Details
@@ -142,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     }
 
-    // Latest Blog Posts
+    // ** 4. Logic for HOMEPAGE "Latest Blog Posts" **
     const latestPostsContainer = document.getElementById('latest-posts-container');
     if (latestPostsContainer && typeof blogPosts !== 'undefined') {
         setTimeout(() => {
@@ -164,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     }
 
-    // Testimonials
+    // ** 5. Logic for HOMEPAGE "Testimonials" **
     const testimonialsContainer = document.getElementById('testimonials-container');
     if (testimonialsContainer && typeof testimonials !== 'undefined') {
         testimonials.forEach(testimonial => {

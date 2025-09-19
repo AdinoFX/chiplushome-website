@@ -33,7 +33,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/dp.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2">
+    <link rel="manifest" href="site.webmanifest?v=2">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -129,12 +132,15 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-2">Hot Selling Properties</h2>
                 <p class="text-center text-gray-600 mb-10">Explore our most popular and fast-selling properties.</p>
-                <div id="property-list-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- **** FIX: Renamed ID for specific targeting **** -->
+                <div id="homepage-properties-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Skeleton Loaders for Properties -->
                     <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
                     <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
                     <div class="skeleton-card animate-pulse"><div class="skeleton-image"></div><div class="p-6"><div class="skeleton-text w-3/4"></div><div class="skeleton-text w-1/2"></div><div class="skeleton-text w-full mt-4"></div></div></div>
                 </div>
+                
                 <div class="text-center mt-12">
                     <a href="properties.html" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
                         View All Properties
@@ -218,23 +224,22 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
                     <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span>Divine Estate, Bogije, Ibeju-Lekki, Lagos</span></li>
-                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><span>+234 706 646 6678</span></li>
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span>8 Toyin Ebenezer Street United estate</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><span>+234 703 376 3712</span></li>
                         <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i><span>info@chiplushome.com.ng</span></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/p/Chiplus-Homes-100054649830621/?_rdc=1&_rdr#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/chiplushomes/?hl=en" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-                <p>&copy; 2024 ChiPlusHome. All Rights Reserved.</p>
-                <p>Designed & Developed by Ubongabasi Ebebe</p>
+                <p>&copy; 2025 ChiPlusHome. All Rights Reserved.</p>
+                <p>Designed & Developed by Kuza Africa.</p>
             </div>
         </div>
     </footer>
