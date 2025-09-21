@@ -10,8 +10,8 @@ const properties = [
     bedrooms: "3-4 Bedrooms", // General description for cards
     status: "For Sale",
     offer: "Fast Selling!",
-    mainImage: "./images/la6.jpeg",
-    gallery: ["./images/la2.jpeg", "./images/la3.jpeg", "./images/la4.jpeg", "./images/la1.jpeg", "./images/la5.jpeg", "./images/la7.jpeg", "./images/la8.jpeg", "./images/la9.jpeg", "./images/la10.jpeg"],
+    mainImage: "./images/la1.jpeg",
+    gallery: ["./images/la2.jpeg", "./images/la3.jpeg", "./images/la4.jpeg", "./images/la6.jpeg", "./images/la5.jpeg"],
     
     // --- UPDATED & SUMMARIZED DESCRIPTION ---
     description: "Experience refined living at Lekki Avana Phase II, where every detail reflects exclusivity and value. This estate guarantees a resort lifestyle with 24/7 security, swimming pools, and eco-friendly smart homes, securing a future rooted in comfort and opportunity. With Phase 1 selling out in just 18 days, this is a legacy for generations.",
