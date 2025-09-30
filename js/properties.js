@@ -10,8 +10,8 @@ const properties = [
     bedrooms: "3-4 Bedrooms", // General description for cards
     status: "For Sale",
     offer: "Fast Selling!",
-    mainImage: "./images/la1.jpeg",
-    gallery: ["./images/la2.jpeg", "./images/la3.jpeg", "./images/la4.jpeg", "./images/la6.jpeg", "./images/la5.jpeg"],
+    mainImage: "./images/la4.jpeg",
+    gallery: ["./images/la2.jpeg", "./images/la3.jpeg", "./images/la1.jpeg", "./images/la6.jpeg", "./images/la5.jpeg"],
     
     // --- UPDATED & SUMMARIZED DESCRIPTION ---
     description: "Experience refined living at Lekki Avana Phase II, where every detail reflects exclusivity and value. This estate guarantees a resort lifestyle with 24/7 security, swimming pools, and eco-friendly smart homes, securing a future rooted in comfort and opportunity. With Phase 1 selling out in just 18 days, this is a legacy for generations.",
@@ -56,8 +56,8 @@ const properties = [
     bedrooms: "N/A",
     status: "For Sale",
     offer: "High ROI!",
-    mainImage: "./images/ar8.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/ar1.jpeg", "./images/ar2.jpeg", "./images/ar3.jpeg", "./images/ar4.jpeg", "./images/ar5.jpeg", "./images/ar6.jpeg", "./images/ar7.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/ar4.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/ar1.jpeg", "./images/ar2.jpeg", "./images/ar3.jpeg", "./images/ar8.jpeg", "./images/ar5.jpeg", "./images/ar6.jpeg", "./images/ar7.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Arizon Estate is one of the most sought-after residential estates in the Idera Scheme, Ibeju Lekki. With the value of land appreciating significantly, it offers the perfect blend of luxury, location, and long-term value for both home seekers and smart investors ready to own a piece of the new Lagos.",
@@ -170,8 +170,8 @@ const properties = [
     bedrooms: "N/A",
     status: "For Sale",
     offer: "Premium Location",
-    mainImage: "./images/ayora-2.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/ayora-3.jpeg", "./images/ayora-4.jpeg", "./images/ayora-5.jpeg", "./images/ayora-6.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/ayora-4.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/ayora-3.jpeg", "./images/ayora-6.jpeg", "./images/ayora-5.jpeg", "./images/ayora-1.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Discover luxury and comfort at Ayora Haven, a premium living experience in the heart of Lagos’ fastest-growing hub. With Government Allocation and top-tier infrastructure including 24-hour security and CCTV, your dream home or investment begins here. Secure your plot today and be part of this thriving, serene community.",
@@ -210,8 +210,8 @@ const properties = [
     bedrooms: "4-Bedroom",
     status: "For Sale",
     //offer: "Price Increase!",
-    mainImage: "./images/ayhomes1.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/ayhomes-2.jpeg", "./images/ayhomes-3.jpeg", "./images/ayhomes-4.jpeg", "./images/ayhomes-5.jpeg", "./images/ayhomes-6.jpeg", "./images/ayhomes-7.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/ayhomes-3.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/ayhomes-2.jpeg", "./images/ayhomes-7.jpeg", "./images/ayhomes-4.jpeg", "./images/ayhomes-5.jpeg", "./images/ayhomes-6.jpeg", "./images/ayhomes1.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Experience the perfect blend of elegance, comfort, and innovation with our 4-Bedroom Fully Detached Bungalows in the fast-rising Igando, Ibeju-Lekki. Designed to give you great value, this is everything you need in a modern home or investment. With prices increasing soon, now is the time to secure your unit.",
@@ -414,8 +414,8 @@ const properties = [
     bedrooms: "N/A",
     status: "For Sale",
     offer: "Fast Selling!",
-    mainImage: "./images/landview-aba-1.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/landview-aba-2.jpeg", "./images/landview-aba-3.jpeg", "./images/landview-aba-4.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/landview-aba-2.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/landview-aba-1.jpeg", "./images/landview-aba-3.jpeg", "./images/landview-aba-4.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Aba’s real estate market is growing fast, and Landview City Aba Phase 2 offers another golden chance to invest in the future. Perfectly located and surrounded by key landmarks, this estate offers residential and commercial plots with guaranteed value appreciation. Phase 1 sold out quickly—don't miss out!",
@@ -491,8 +491,8 @@ const properties = [
     bedrooms: "N/A",
     status: "For Sale",
     offer: "Fast Selling!",
-    mainImage: "./images/landview-1.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/landview-2.jpeg", "./images/landview-3.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/landview-2.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/landview-1.jpeg", "./images/landview-3.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Aba’s real estate market is booming, and Landview City Aba Phase 2 is your golden opportunity to invest in the future. Perfectly located and surrounded by key landmarks, this estate offers residential and commercial plots with guaranteed value appreciation. With Phase 1 selling out quickly, now is the time to secure your plot!",
@@ -537,8 +537,8 @@ const properties = [
     bedrooms: "N/A",
     status: "For Sale",
     offer: "Affordable Investment",
-    mainImage: "./images/city-nest-1.jpeg", // Action: Replace with a high-quality image
-    gallery: ["./images/city-nest-2.jpeg", "./images/city-nest-3.jpeg", "./images/city-nest-4.jpeg", "./images/city-nest-5.jpeg"], // Action: Replace with high-quality images
+    mainImage: "./images/city-nest-2.jpeg", // Action: Replace with a high-quality image
+    gallery: ["./images/city-nest-3.jpeg", "./images/city-nest-1.jpeg", "./images/city-nest-4.jpeg", "./images/city-nest-5.jpeg"], // Action: Replace with high-quality images
 
     // --- SUMMARIZED DESCRIPTION ---
     description: "Looking for affordable land with high future value? City Nest Phase 6 in Ibefun, Ogun State, offers the perfect blend of affordability, security, and growth potential. With a secure title and 100% dry land ready for development, this estate is your best choice for building a dream home or investing for future returns.",
